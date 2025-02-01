@@ -1,0 +1,1 @@
+import{_ as o,c as r,a as t,o as a}from"./index-TyAeO5nk.js";const n={};function s(c,e){return a(),r("footer",null,e[0]||(e[0]=[t("a",{href:"/iletisim"},"Bize ulaşın",-1)]))}const l=o(n,[["render",s]]);export{l as default};
