@@ -1,19 +1,16 @@
 {
-  "homepage": "https://project-9116.github.io/ucgenizgara",
   "name": "ucgenizgara",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    
+    "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/",
-    "build": "vite build",
-    "deploy": "gh-pages -d dist"
+    "format": "prettier --write src/"
   },
   "dependencies": {
     "pinia": "^2.3.0",
@@ -30,7 +27,6 @@
     "@vue/tsconfig": "^0.7.0",
     "eslint": "^9.14.0",
     "eslint-plugin-vue": "^9.30.0",
-    "gh-pages": "^6.3.0",
     "npm-run-all2": "^7.0.2",
     "prettier": "^3.3.3",
     "typescript": "~5.6.3",
