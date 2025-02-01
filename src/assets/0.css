@@ -1,0 +1,106 @@
+/* https://data-deveb.github.io/
+   https://data-deveb.github.io/0.css
+   0.16 sürümü
+*/
+
+:root{
+    /* AYDINLIK TEMA */
+    --light-text-color: #000;
+    --light-background-color: #fff;
+    /* KARANLIK TEMA */
+    --dark-text-color: #fff;
+    --dark-background-color: #000;
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --text-color: var(--light-text-color);
+        --background-color: var(--light-background-color);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --text-color: var(--dark-text-color);
+        --background-color: var(--dark-background-color);
+    }
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+[lang|="en"],
+[lang|="ru"]{
+    line-height: 1.15;
+}
+
+[lang|="ar"]{
+    line-height: 1.20;
+}
+
+[lang|="tr"],
+[lang|="el"]{
+    line-height: 1.25;
+}
+
+html{
+    display: flex;
+    min-height: 100%;
+    line-height: normal;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+
+body{
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+article{
+    max-width: 85ch;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+h1{
+    font-size: 2.0rem;
+}
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+h5{
+    font-size: 1.1rem;
+}
+h6{
+    font-size: 1.0rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-block-end: 0;
+}
+
+article p{
+    text-indent: 3ch;
+}
+
+figure{
+    margin-inline-start: 3ch;
+    margin-inline-end: 3ch;
+}
