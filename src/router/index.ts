@@ -147,6 +147,17 @@ const router = createRouter({
       },
     },
     {
+      path: '/sik-sorulan-sorular',
+      name: 'Sık Sorulan Sorular',
+      components: {
+        default: () => import('../views/articles/SSS.vue'),
+        AsideStart: () => import('../components/AsideStart.vue'),
+        AsideEnd: () => import('../components/AsideEnd.vue'),
+        Header: () => import('../components/Header.vue'),
+        Footer: () => import('../components/Footer.vue'),
+      },
+    },
+    {
       path: '/iletisim',
       name: 'Contact',
       components: {
