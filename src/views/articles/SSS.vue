@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="scrollbar">
         <article>
             <h1>Sizden Gelen Sorular</h1>
 

@@ -135,7 +135,8 @@ header > .right{
 
 aside.start {
     grid-column: span 1;
-
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 main {
@@ -170,6 +171,7 @@ article ul li{
 aside.end {
     grid-column: span 1;
     display: flex;
+    overflow-y: auto;
 }
 
 footer {
