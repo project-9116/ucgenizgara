@@ -17,6 +17,11 @@
 
 @import './css/scrollbar.css';
 
+:root{
+    /* AYDINLIK TEMA */
+    --light-text-color: #fff;
+}
+
 .video-container {
     position: fixed;
     top: 0;
