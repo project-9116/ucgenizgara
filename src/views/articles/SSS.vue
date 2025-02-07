@@ -1,7 +1,7 @@
 <template>
     <main class="scrollbar">
         <article>
-            <h1>Sizden Gelen Sorular</h1>
+            <h1>Sık Sorulan Sorular</h1>
 
 <h2>Her tür ocak üzerinde kullanılabilir mi?</h2>
 <p>Evet. Ocağınız set üstü ya da solo ocaksa ve döküm (demir) ızgaralı ise, Üçgen Izgara’yı üzerine koyarak kullanabilirsiniz. Eğer ankastre ocak kullanıyorsanız, özel ankastre ayak aparatımızı isteyiniz. Çünkü, Üçgen Izgara’nın her iki yanındaki boşlukların kapanmaması, hava akımının oluşması için önemlidir. Ayrıca, ızgaranın orta noktası, ateş kaynağından 4-5 cm yukarıda olmalıdır.</p>
