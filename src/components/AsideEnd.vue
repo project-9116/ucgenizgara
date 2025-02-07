@@ -1,7 +1,7 @@
 <template>
     <aside class="end" style="display: flex; flex-direction: column;">
         <div class="video-container">
-            <video autoplay muted loop class="background-video">
+            <video autoplay loop class="background-video">
                 <source src="../assets/vid/1_30fps.mp4" type="video/mp4">
                 <!-- <source src="https://videos.pexels.com/video-files/4143020/4143020-hd_1080_1920_30fps.mp4" type="video/mp4"> -->
                 Tarayıcınız video desteklemiyor.
