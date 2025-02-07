@@ -38,7 +38,7 @@ interface MenuLink {
 // Menü öğelerinin dizisini tanımlıyoruz
 const menuLinks = ref<MenuLink[]>([
   { text: "Ocak Üstü Izgara", url: "/granit-kapli-ucgen-izgara" },
-  { text: "Sağlıklıdır", url: "/sagliklidir" },
+  { text: "Sağlıklı", url: "/sagliklidir" },
   { text: "Üstün Lezzet Yaratır", url: "/ustun-lezzet-yaratir" },
   { text: "Kokusuz & Dumansız", url: "/kokusuz-ve-dumansiz" },
   { text: "Çevreye Duyarlıdır", url: "/cevreye-duyarlidir" },
