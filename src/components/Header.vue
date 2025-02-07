@@ -21,7 +21,7 @@
             <Menu></Menu>
         </div>
         <div class="right">
-            <button>YAKINDA</button>
+            <!-- <button>YAKINDA</button> -->
         </div>
     </header>
 </template>
