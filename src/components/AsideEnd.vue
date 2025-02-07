@@ -1,5 +1,5 @@
 <template>
-    <aside class="end" style="display: flex; flex-direction: column;">
+    <aside class="end scrollbar" style="display: flex; flex-direction: column;">
         <div class="video-container">
             <video autoplay muted loop class="background-video">
                 <source src="../assets/vid/1_30fps.mp4" type="video/mp4">
@@ -7,8 +7,14 @@
                 Tarayıcınız video desteklemiyor.
             </video>
         </div>
-        <video width="100%" controls autoplay disablePictureInPicture controlsList="nodownload"
-                poster="../assets/img/watch_video.jpg" style="border-radius: 8px;">
+        <video 
+            width="100%" 
+            controls 
+            autoplay 
+            disablePictureInPicture 
+            controlsList="nodownload"
+            poster="../assets/img/watch_video.jpg" 
+            style="border-radius: 8px;">
                 <source src="../assets/vid/Üçgen_Izgara_Videosu.mp4"
                     type="video/mp4">
         </video>

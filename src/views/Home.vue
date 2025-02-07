@@ -1,5 +1,5 @@
 <template>
-    <main class="scroll">
+    <main class="scrollbar">
 
         <article style="margin: auto;">
             <figure>
