@@ -1,27 +1,38 @@
 <template>
     <aside class="start scrollbar">
-        <div class="aside-menu">
-            <div v-for="link in menuLinks" :key="link.url">
-                <RouterLink :to="link.url">
-                    <h1>{{ link.text }}</h1></RouterLink>
-            </div>
-        </div>
+        <nav>
+            <ul class="aside-menu">
+                <li v-for="link in menuLinks" :key="link.url">
+                    <RouterLink :to="link.url">
+                        {{ link.text }}</RouterLink>
+                </li>
+            </ul>
+        </nav>
     </aside>
 </template>
 
 <style>
 
-.aside-menu > div{
-    position: static;
-}
-.aside-menu h1{
+ul.aside-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
     font-family: "Racing Sans One", serif;
-    margin-bottom: 0px;
-    font-size:22pt;
-    font-weight: 400;
+    font-size:20pt;
+    font-weight: normal;
     text-transform: capitalize;
 }
-.aside-menu h1:hover{
+.aside-menu > li{
+    list-style: none;
+}
+.aside-menu{
+    font-family: "Racing Sans One", serif;
+    
+    
+}
+.aside-menu li:hover{
     color: yellow;
     transform: scale(1.08, 1.2);
 }
