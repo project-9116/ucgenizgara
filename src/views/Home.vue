@@ -36,84 +36,85 @@
   </template>
   
   <script lang="ts">
-  import { defineComponent, ref, onMounted } from 'vue';
-  
-  export default defineComponent({
-    data() {
-      return {
-        slides: [ // Bu, slider'daki resimlerin listesini tutar
-          'N11-1.jpg',
-          'N11-2.jpg',
-          'N11-3.jpg',
-          'N11-4.jpg',
-          'N11-5.jpg',
-          'N11-6.jpg',
-          'N11-7.jpg',
-          'N11-8.jpg',
-          'N11-9.jpg',
-        ],
-        currentIndex: 0, // Başlangıçtaki index
-        startX: 0, // Başlangıç koordinatı (swipe için)
-        endX: 0, // Bitiş koordinatı (swipe için)
-        interval: 3000, // Slayt geçiş süresi
-      };
-    },
-    mounted() {
+import { defineComponent, ref, onMounted } from 'vue';
+
+export default defineComponent({
+  data() {
+    return {
+      slides: [ // Bu, slider'daki resimlerin listesini tutar
+        'N11-1.jpg',
+        'N11-2.jpg',
+        'N11-3.jpg',
+        'N11-4.jpg',
+        'N11-5.jpg',
+        'N11-6.jpg',
+        'N11-7.jpg',
+        'N11-8.jpg',
+        'N11-9.jpg',
+      ],
+      currentIndex: 0, // Başlangıçtaki index
+      startX: 0, // Başlangıç koordinatı (swipe için)
+      endX: 0, // Bitiş koordinatı (swipe için)
+      interval: 3000, // Slayt geçiş süresi
+    };
+  },
+  mounted() {
+    const slider = this.$el.querySelector('.slider') as HTMLElement;
+    const slides = this.$el.querySelectorAll('.slider img');
+    const slideCount = slides.length;
+
+    this.goToSlide(this.currentIndex); // Başlangıçta ilk slaytı göster
+
+    // Otomatik geçiş
+    setInterval(() => this.nextSlide(), this.interval);
+
+    // Slider'ı dokunma olaylarıyla kontrol et
+    slider.addEventListener('touchstart', this.handleTouchStart);
+    slider.addEventListener('touchend', this.handleTouchEnd);
+
+    // Optional: Navigation dots
+    const navLinks = this.$el.querySelectorAll('.slider-nav a');
+    navLinks.forEach((link: HTMLAnchorElement, index: number) => {
+      link.addEventListener('click', (event: Event) => {
+        event.preventDefault();
+        this.goToSlide(index);
+      });
+    });
+  },
+  methods: {
+    goToSlide(index: number) {
       const slider = this.$el.querySelector('.slider') as HTMLElement;
       const slides = this.$el.querySelectorAll('.slider img');
-      const slideCount = slides.length;
-  
-      this.goToSlide(this.currentIndex); // Başlangıçta ilk slaytı göster
-  
-      // Otomatik geçiş
-      setInterval(() => this.nextSlide(), this.interval);
-  
-      // Slider'ı dokunma olaylarıyla kontrol et
-      slider.addEventListener('touchstart', this.handleTouchStart);
-      slider.addEventListener('touchend', this.handleTouchEnd);
-  
-      // Optional: Navigation dots
-      const navLinks = this.$el.querySelectorAll('.slider-nav a');
-      navLinks.forEach((link, index) => {
-        link.addEventListener('click', (event) => {
-          event.preventDefault();
-          this.goToSlide(index);
-        });
-      });
+      const offset = slides[0].clientWidth * index;
+      slider.style.transform = `translateX(-${offset}px)`; // Slaytı göster
+      this.currentIndex = index; // Mevcut index'i güncelle
     },
-    methods: {
-      goToSlide(index: number) {
-        const slider = this.$el.querySelector('.slider') as HTMLElement;
-        const slides = this.$el.querySelectorAll('.slider img');
-        const offset = slides[0].clientWidth * index;
-        slider.style.transform = `translateX(-${offset}px)`; // Slaytı göster
-        this.currentIndex = index; // Mevcut index'i güncelle
-      },
-      nextSlide() {
-        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-        this.goToSlide(this.currentIndex);
-      },
-      previousSlide() {
-        this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-        this.goToSlide(this.currentIndex);
-      },
-      handleTouchStart(event: TouchEvent) {
-        this.startX = event.touches[0].clientX; // Başlangıç noktasını al
-      },
-      handleTouchEnd(event: TouchEvent) {
-        this.endX = event.changedTouches[0].clientX; // Bitiş noktasını al
-        const diffX = this.endX - this.startX;
-        if (Math.abs(diffX) > 50) { // Eğer kaydırma mesafesi yeterliyse
-          if (diffX > 0) {
-            this.previousSlide(); // Sağ kaydır, önceki slayta git
-          } else {
-            this.nextSlide(); // Sol kaydır, sonraki slayta git
-          }
+    nextSlide() {
+      this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+      this.goToSlide(this.currentIndex);
+    },
+    previousSlide() {
+      this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+      this.goToSlide(this.currentIndex);
+    },
+    handleTouchStart(event: TouchEvent) {
+      this.startX = event.touches[0].clientX; // Başlangıç noktasını al
+    },
+    handleTouchEnd(event: TouchEvent) {
+      this.endX = event.changedTouches[0].clientX; // Bitiş noktasını al
+      const diffX = this.endX - this.startX;
+      if (Math.abs(diffX) > 50) { // Eğer kaydırma mesafesi yeterliyse
+        if (diffX > 0) {
+          this.previousSlide(); // Sağ kaydır, önceki slayta git
+        } else {
+          this.nextSlide(); // Sol kaydır, sonraki slayta git
         }
-      },
+      }
     },
-  });
-  </script>
+  },
+});
+</script>
+
   
   <style scoped>
   /* Container for the slider */
