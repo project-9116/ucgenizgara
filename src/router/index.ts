@@ -12,10 +12,10 @@ const createArticleRoute = (path: string, name: string, viewPath: string) => ({
   name,
   components: {
     default: () => import(`../views/articles/${viewPath}.vue`),  // Dinamik import
-    AsideStart,
-    AsideEnd,
-    Header,
-    Footer,
+    AsideStart: AsideStart,
+    AsideEnd: AsideEnd,
+    Header: Header,
+    Footer: Footer,
   },
 });
 
@@ -27,10 +27,10 @@ const router = createRouter({
       name: 'Home',
       components: {
         default: () => import('../views/Home.vue'),
-        AsideStart,
-        AsideEnd,
-        Header,
-        Footer,
+        AsideStart: AsideStart,
+        AsideEnd: AsideEnd,
+        Header: Header,
+        Footer: Footer,
       },
     },
     // Diğer route'ları dinamik oluşturma
@@ -53,8 +53,8 @@ const router = createRouter({
       name: 'Contact',
       components: {
         default: () => import('../views/About.vue'),
-        Header,
-        Footer,
+        Header: Header,
+        Footer: Footer,
       },
     },
     {
@@ -62,8 +62,8 @@ const router = createRouter({
       name: 'Hakkımızda',
       components: {
         default: () => import('../views/Hakkimizda.vue'),
-        Header,
-        Footer,
+        Header: Header,
+        Footer: Footer,
       },
     },
   ],
