@@ -40,8 +40,10 @@
     </main>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent, ref, onMounted } from 'vue';
+
+export default defineComponent({
   data() {
     return {
       slides: [ // Bu, slider'daki resimlerin listesini tutar
@@ -62,14 +64,14 @@ export default {
     };
   },
   mounted() {
-    const slider = this.$el.querySelector('.slider');
+    const slider = this.$el.querySelector('.slider') as HTMLElement;
     const slides = this.$el.querySelectorAll('.slider img');
     const slideCount = slides.length;
-    
+
     this.goToSlide(this.currentIndex); // Başlangıçta ilk slaytı göster
 
     // Otomatik geçiş
-    setInterval(this.nextSlide, this.interval);
+    setInterval(() => this.nextSlide(), this.interval);
 
     // Slider'ı dokunma olaylarıyla kontrol et
     slider.addEventListener('touchstart', this.handleTouchStart);
@@ -85,8 +87,8 @@ export default {
     });
   },
   methods: {
-    goToSlide(index) {
-      const slider = this.$el.querySelector('.slider');
+    goToSlide(index: number) {
+      const slider = this.$el.querySelector('.slider') as HTMLElement;
       const slides = this.$el.querySelectorAll('.slider img');
       const offset = slides[0].clientWidth * index;
       slider.style.transform = `translateX(-${offset}px)`; // Slaytı göster
@@ -100,10 +102,10 @@ export default {
       this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
       this.goToSlide(this.currentIndex);
     },
-    handleTouchStart(event) {
+    handleTouchStart(event: TouchEvent) {
       this.startX = event.touches[0].clientX; // Başlangıç noktasını al
     },
-    handleTouchEnd(event) {
+    handleTouchEnd(event: TouchEvent) {
       this.endX = event.changedTouches[0].clientX; // Bitiş noktasını al
       const diffX = this.endX - this.startX;
       if (Math.abs(diffX) > 50) { // Eğer kaydırma mesafesi yeterliyse
@@ -115,7 +117,7 @@ export default {
       }
     },
   },
-};
+});
 </script>
 
 <style scoped>
