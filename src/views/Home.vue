@@ -3,15 +3,15 @@
 
         <div class="slider-wrapper">
             <div class="slider">
-                <img id="slide-1" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-1.jpg" alt="Photo 1" />
-                <img id="slide-2" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-2.jpg" alt="Photo 2" />
-                <img id="slide-3" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-3.jpg" alt="Photo 3" />
-                <img id="slide-4" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-4.jpg" alt="Photo 4" />
-                <img id="slide-5" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-5.jpg" alt="Photo 5" />
-                <img id="slide-6" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-6.jpg" alt="Photo 6" />
-                <img id="slide-7" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-7.jpg" alt="Photo 7" />
-                <img id="slide-8" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-8.jpg" alt="Photo 8" />
-                <img id="slide-9" src="../assets/img/slider/Ocak_Üstü_Izgara-N11-9.jpg" alt="Photo 9" />
+                <img id="slide-1" src="../assets/img/slider/N11-1.jpg" alt="Photo 1" />
+                <img id="slide-2" src="../assets/img/slider/N11-2.jpg" alt="Photo 2" />
+                <img id="slide-3" src="../assets/img/slider/N11-3.jpg" alt="Photo 3" />
+                <img id="slide-4" src="../assets/img/slider/N11-4.jpg" alt="Photo 4" />
+                <img id="slide-5" src="../assets/img/slider/N11-5.jpg" alt="Photo 5" />
+                <img id="slide-6" src="../assets/img/slider/N11-6.jpg" alt="Photo 6" />
+                <img id="slide-7" src="../assets/img/slider/N11-7.jpg" alt="Photo 7" />
+                <img id="slide-8" src="../assets/img/slider/N11-8.jpg" alt="Photo 8" />
+                <img id="slide-9" src="../assets/img/slider/N11-9.jpg" alt="Photo 9" />
             </div>
     <div class="slider-nav">
         <a href="#slide-1"></a>
@@ -45,15 +45,15 @@ export default {
   data() {
     return {
       slides: [ // Bu, slider'daki resimlerin listesini tutar
-        'slide1.jpg',
-        'slide2.jpg',
-        'slide3.jpg',
-        'slide4.jpg',
-        'slide5.jpg',
-        'slide6.jpg',
-        'slide7.jpg',
-        'slide8.jpg',
-        'slide9.jpg',
+        'N11-1.jpg',
+        'N11-2.jpg',
+        'N11-3.jpg',
+        'N11-4.jpg',
+        'N11-5.jpg',
+        'N11-6.jpg',
+        'N11-7.jpg',
+        'N11-8.jpg',
+        'N11-9.jpg',
       ],
       currentIndex: 0, // Başlangıçtaki index
       startX: 0, // Başlangıç koordinatı (swipe için)
