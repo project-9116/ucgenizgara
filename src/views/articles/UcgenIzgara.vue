@@ -5,6 +5,9 @@
             <h1>ÇEVRECİ IZGARA</h1>
             <h2>OCAK ÜSTÜ GRANİT KAPLI ÜÇGEN IZGARA</h2>
             <span>30cm x 50 cm</span>
+
+            <img src="../../assets/img/products/Üçgen-Izgara-Ölçüleri.png" style="max-width: 100%; margin: 20px 0px;" alt="">
+            
             <h3>Yeni Çağın Akıllı Izgarası</h3>
             <ul>
                 <li>Kubbemsi ısı delikleriyle, bildiğiniz tüm ızgaralardan farklı</li>
