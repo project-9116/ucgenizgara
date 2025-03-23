@@ -19,40 +19,22 @@ const createArticleRoute = (path: string, name: string, viewPath: string) => ({
   },
 });
 
-const createSingleArticleRoute = (path: string, name: string, viewPath: string) => ({
-  path,
-  name,
-  components: {
-    default: () => import(`../views/articles/${viewPath}.vue`),  // Dinamik import
-    Header: Header,
-    Footer: Footer,
-  },
-});
-
-
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'Home',
-    //   components: {
-    //     default: () => import('../views/Home.vue'),
-    //     AsideStart: AsideStart,
-    //     AsideEnd: AsideEnd,
-    //     Header: Header,
-    //     Footer: Footer,
-    //   },
-    // },
     {
-        path: '/',
-        name: 'Server is offline',
-        components: {
-          default: () => import('../views/Server.vue'),
-        },
+      path: '/',
+      name: 'Home',
+      components: {
+        default: () => import('../views/Home.vue'),
+        AsideStart: AsideStart,
+        AsideEnd: AsideEnd,
+        Header: Header,
+        Footer: Footer,
       },
+    },
     // Diğer route'ları dinamik oluşturma
-    createSingleArticleRoute('/incele', 'Üçgen Izgara', 'UcgenIzgara'),
+    createArticleRoute('/incele', 'Üçgen Izgara', 'UcgenIzgara'),
     createArticleRoute('/sagliklidir', 'Sağlıklıdır', 'Sagliklidir'),
     createArticleRoute('/ustun-lezzet-yaratir', 'Üstün Lezzet Yaratır', 'UstunLezzetYaratir'),
     createArticleRoute('/kokusuz-izgara', 'Kokusuz Izgara', 'kokusuz'),
