@@ -1,7 +1,7 @@
 <template>
     <main class="scrollbar">
         <article>
-            <h1>Üçgen Izgara Çevreye Duyarlıdır</h1>
+            <h1>Çevrecil Üçgen Izgara</h1>
             <p> Geleneksel mangal alışkanlığımızda, biz mangal keyfi yaşarken oluşan yoğun duman ve koku çevremize büyük
                 rahatsızlık verir. Özellikle balkonumuzda ya da bahçemizde mangal yaparken komşularımıza verdiğimiz
                 rahatsızlık, çoğu zaman tartışmalara hatta kavgalara neden olacak kadar sorun yaratır. Bu nedenle,
