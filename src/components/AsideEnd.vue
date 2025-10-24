@@ -7,7 +7,7 @@
                 Tarayıcınız video desteklemiyor.
             </video>
         </div>
-        <video 
+        <!-- <video 
             width="100%" 
             controls 
             autoplay 
@@ -17,12 +17,12 @@
             style="border-radius: 8px;">
                 <source src="../assets/vid/Üçgen_Izgara_Videosu.mp4"
                     type="video/mp4">
-        </video>
-        <ul class="menu fat">
+        </video> -->
+        <!-- <ul class="menu fat">
             <li><RouterLink to="/incele">İncele</RouterLink></li>
             <li><a href="#">Satıcıyı Seç</a></li>
             <li><a href="#">...</a></li>
             <li style="font-size:52pt; margin-top: 20px;"><a href="#">SATIN AL</a></li>
-        </ul>
+        </ul> -->
     </aside>
 </template>

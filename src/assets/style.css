@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     z-index: -1; /* Video arka planda kalacak */
-    opacity: 0.25;
+    opacity: 0.05;
   }
   
   .background-video {
@@ -93,14 +93,19 @@ figure > figcaption{
     display: grid;
     --column: 5;
     grid-template-columns: repeat(var(--column), 1fr);
-    grid-template-rows: auto 1fr auto;
-    gap: 8px;
+    grid-template-rows: auto 1fr repeat(2, auto);
+    gap: 20px;
     max-height: 100%;
     padding: 0 5%;
 }
+header { grid-area: 1 / 1 / 2 / 6; }
+main { grid-area: 2 / 1 / 4 / 5; }
+aside.start { grid-area: 2 / 5 / 3 / 6; }
+aside.end { grid-area: 3 / 5 / 4 / 6; }
+footer { grid-area: 4 / 1 / 5 / 6; } 
+
 
 header {
-    grid-column: span var(--column);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -116,7 +121,7 @@ header > .center{
     flex: 3;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 
 header > .right{
@@ -140,7 +145,6 @@ header > .right{
 }
 
 aside.start {
-    grid-column: span 1;
     overflow-y: auto;
     overflow-x: hidden;
     margin-left: -20px;
@@ -153,8 +157,7 @@ aside.start {
 main {
     display: flex;
     flex: 1 0 0;
-    grid-column: span 3;
-    justify-content: center;
+    justify-content: left;
     overflow: auto;
     justify-items: center;
 }
@@ -180,13 +183,26 @@ article ul li{
 }
 
 aside.end {
-    grid-column: span 1;
     display: flex;
     overflow-y: auto;
 }
 
 footer {
-    grid-column: span var(--column);
+    display: flex;
+    gap: 10px;
+    padding-top:20px;
+}
+footer .baş {
+    grid-column: span 3 / span 3;
+}
+
+footer .ayak{
+    
+    grid-column-start: 4;
+    grid-column: span 2 / span 2;
+    display: flex;
+    flex: 1 0 auto;
+    align-content: end;
 }
 
 /* <!-- background-image: radial-gradient(circle, #6f093a, #6a0431, #650228, #5f001f, #590017);

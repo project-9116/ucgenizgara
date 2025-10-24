@@ -16,6 +16,7 @@
 ul.aside-menu{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 24px;
   padding: 0;
   margin: 0;
@@ -23,6 +24,7 @@ ul.aside-menu{
   font-size: 18pt;
   font-weight: normal;
   text-transform: capitalize;
+  justify-content: space-between;
 
 }
 .aside-menu > li{
@@ -51,17 +53,17 @@ interface MenuLink {
 
 // Menü öğelerinin dizisini tanımlıyoruz
 const menuLinks = ref<MenuLink[]>([
-  { text: "Ocaküstü Izgara", url: "/granit-kapli-ucgen-izgara" },
-  { text: "Sağlıklı Izgara", url: "/sagliklidir" },
-  { text: "Üstün Lezzet Yaratan Izgara", url: "/ustun-lezzet-yaratir" },
-  { text: "Kokusuz Izgara", url: "/kokusuz-ve-dumansiz" },
-  { text: "Dumansız Izgara", url: "/kokusuz-ve-dumansiz" },
-  { text: "Çevrecil Izgara", url: "/cevreye-duyarlidir" },
-  { text: "Ekonomik Izgara", url: "/ekonomiktir" },
-  { text: "Izgara Kullanımı", url: "/kullanimi" },
-  { text: "Izgarada Lezzet Önerilerimiz", url: "/lezzet-onerilerimiz" },
-  { text: "Izgara Nasıl Temizlenir?", url: "/nasil-temizlenir" },
-  { text: "Izgara Aparatları", url: "/aparatlar" },
+//   { text: "Ocaküstü Izgara", url: "/granit-kapli-ucgen-izgara" },
+//   { text: "Sağlıklı Izgara", url: "/sagliklidir" },
+//   { text: "Üstün Lezzet Yaratan Izgara", url: "/ustun-lezzet-yaratir" },
+//   { text: "Kokusuz Izgara", url: "/kokusuz-ve-dumansiz" },
+//   { text: "Dumansız Izgara", url: "/kokusuz-ve-dumansiz" },
+//   { text: "Çevrecil Izgara", url: "/cevreye-duyarlidir" },
+//   { text: "Ekonomik Izgara", url: "/ekonomiktir" },
+  { text: "Üçgen Izgara Nasıl Kullanılır?", url: "/kullanimi" },
+  { text: "Üçgen Izgarada Lezzet Önerilerimiz", url: "/lezzet-onerilerimiz" },
+  { text: "Üçgen Izgara Nasıl Temizlenir?", url: "/nasil-temizlenir" },
+  { text: "Üçgen Izgara ile Kullanılan Aparatlar", url: "/aparatlar" },
 //   { text: "Susuz", url: "/susuz" },
 //   { text: "Mangalda", url: "/mangalda" },
 //   { text: "Ocakta", url: "/ocakta" },

@@ -13,16 +13,16 @@
                                     font-size:11pt; 
                                     font-weight: 600;">
                     <img src="../assets/img/logo.png" height="100%" alt="">
-                    <h3>ÜÇGEN IZGARA</h3>
+                    <h3>Üçgen Izgara</h3>
                 </RouterLink>
             </div>
         </div>
         <div class="center">
             <Menu></Menu>
         </div>
-        <div class="right">
-            <!-- <button>YAKINDA</button> -->
-        </div>
+        <!-- <div class="right">
+            <button>YAKINDA</button>
+        </div> -->
     </header>
 </template>
 
