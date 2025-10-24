@@ -57,6 +57,7 @@ import { ref } from 'vue';
 interface MenuLink {
   text: string;
   url: string;
+  icon: string;
 }
 
 // Menü öğelerinin dizisini tanımlıyoruz
