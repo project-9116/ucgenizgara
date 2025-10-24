@@ -62,13 +62,13 @@ interface MenuLink {
 
 // Menü öğelerinin dizisini tanımlıyoruz
 const menuLinks = ref<MenuLink[]>([
-  { text: "Ocaküstü Izgara", url: "/granit-kapli-ucgen-izgara", icon:"/src/assets/img/icons/stove.png" },
-  { text: "Sağlıklı Izgara", url: "/sagliklidir", icon: "/src/assets/img/icons/leaf.png" },
-  { text: "Üstün Lezzet Izgarası", url: "/ustun-lezzet-yaratir", icon:"/src/assets/img/icons/chef.png" },
-  { text: "Kokusuz Izgara", url: "/kokusuz-ve-dumansiz", icon:"/src/assets/img/icons/smell.png" },
-  { text: "Dumansız Izgara", url: "/kokusuz-ve-dumansiz", icon:"/src/assets/img/icons/free.png" },
-  { text: "Çevrecil Izgara", url: "/cevreye-duyarlidir", icon:"/src/assets/img/icons/bio.png" },
-  { text: "Ekonomik Izgara", url: "/ekonomiktir", icon:"/src/assets/img/icons/reduction.png" },
+  { text: "Ocaküstü Izgara", url: "/granit-kapli-ucgen-izgara", icon:"/icons/stove.png" },
+  { text: "Sağlıklı Izgara", url: "/sagliklidir", icon: "/icons/leaf.png" },
+  { text: "Üstün Lezzet Izgarası", url: "/ustun-lezzet-yaratir", icon:"/icons/chef.png" },
+  { text: "Kokusuz Izgara", url: "/kokusuz-ve-dumansiz", icon:"/icons/smell.png" },
+  { text: "Dumansız Izgara", url: "/kokusuz-ve-dumansiz", icon:"/icons/free.png" },
+  { text: "Çevrecil Izgara", url: "/cevreye-duyarlidir", icon:"/icons/bio.png" },
+  { text: "Ekonomik Izgara", url: "/ekonomiktir", icon:"/icons/reduction.png" },
 //   { text: "Izgara Kullanımı", url: "/kullanimi", icon:"" },
 //   { text: "Izgarada Lezzet Önerilerimiz", url: "/lezzet-onerilerimiz", icon:"" },
 //   { text: "Izgara Nasıl Temizlenir?", url: "/nasil-temizlenir", icon:"" },
