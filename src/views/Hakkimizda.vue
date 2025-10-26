@@ -9,7 +9,7 @@
         </div>
 
     </aside>
-    <main class="scroll">
+    <main class="scrollbar">
         <article>
         <h1>HAKKIMIZDA</h1>
         <p>

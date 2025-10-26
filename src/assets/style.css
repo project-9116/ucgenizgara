@@ -108,20 +108,23 @@ footer { grid-area: 4 / 1 / 5 / 6; }
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 8px;
     padding:10px 0;
 }
 
 header > .left{
-    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
 }
 
 header > .center{
     flex: 3;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 
 header > .right{
@@ -129,8 +132,10 @@ header > .right{
 }
 
 .logo{
-    height: 48px; min-width: 300px; max-width: 350px;
+    height: 48px; max-width: 350px;
     font-family: "Racing Sans One", serif;
+    display: flex;
+    justify-content: center;
 }
 .logo img{
     max-height: 24pt;
@@ -189,6 +194,7 @@ aside.end {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding-top:20px;
 }

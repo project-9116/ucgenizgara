@@ -1,6 +1,6 @@
 <template>
     <main class="scrollbar">
-      <div class="slider-wrapper">
+      <!-- <div class="slider-wrapper">
         <div class="slider">
             <img id="slide-1" src="../assets/img/slider/N11-1.jpg" alt="Photo 1" />
             <img id="slide-2" src="../assets/img/slider/N11-2.jpg" alt="Photo 2" />
@@ -31,11 +31,11 @@
           <figcaption>OCAK ÜSTÜ ÜÇGEN IZGARA</figcaption>
         </figure>
         <h1 style="font-size: 3em; text-align: center;">Sağlıklı beslenmeniz için tasarladık</h1>
-      </article>
+      </article> -->
     </main>
   </template>
   
-  <script lang="ts">
+  <!-- <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue';
 
 export default defineComponent({
@@ -113,7 +113,7 @@ export default defineComponent({
     },
   },
 });
-</script>
+</script> -->
 
   
   <style scoped>
