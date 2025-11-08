@@ -1,6 +1,15 @@
 <template>
     <main class="scrollbar">
         <article>
+            <div class="video-background">
+                <video autoplay muted loop class="video-background">
+                    <source src="/videos/3128759-sd_960_540_25fps.mp4" type="video/mp4">
+                    <!-- <source src="your-video.webm" type="video/webm"> -->
+                    <!-- Eğer video oynatılamazsa bir yedek metin gösterin -->
+                    Tarayıcınız video desteklemiyor.
+                </video>
+                <div class="overlay"></div>
+            </div>
             <h1>ÜSTÜN LEZZET YARATIR</h1>
             <p>ÜÇGEN IZGARA’da pişen etlerin protein yapıları bozulmaz, besin değerleri kaybolmaz, suyu ve yağı içinde kalır. Kurumadan, yumuşacık ve benzersiz bir lezzetle pişer.</p>
 
@@ -15,3 +24,26 @@
         </article>
     </main>
 </template>
+
+<style>
+ .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Video boyutunu ekrana göre ayarlamak için */
+            z-index: -2; /* Videonun arka planda kalmasını sağlamak için */
+            opacity: 0.2;
+        }
+.overlay{
+    position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+background-image: radial-gradient(circle, #de375d, #d83459, #d33256, #cd2f52, #c82c4f, #c1284a, #b92445, #b22040, #a71a39, #9b1432, #900e2b, #850724);
+            mix-blend-mode:overlay;
+            z-index: -1;
+}
+</style>
