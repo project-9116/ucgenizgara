@@ -44,7 +44,7 @@
         <div class="ayak">
             <ul class="menu fat">
                 <li style="font-size:clamp(22pt, 5vw, 52pt);">
-                    <a href="#">SATIN AL</a>
+                    <a href="https://huralp.com/ucgen-izgara-ocakustu-pratik-izgara">SATIN AL</a>
                 </li>
             </ul>
         </div>
