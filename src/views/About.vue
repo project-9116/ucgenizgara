@@ -1,7 +1,8 @@
 <template>
   <main>
     <article>
-    <h1>Üçgen Izgaranın Mucidi Namık Bey</h1>
+    <h1>Üçgen Izgaranın Mucidi</h1>
+    <h2>Namık Kemal KARAMUK</h2>
     <p><b>Telefon:</b> +90 533 255 07 60</p>
     <h1>Satış Yerleri</h1>
     <h2>Hüralp Yapı Market</h2>
