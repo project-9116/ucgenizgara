@@ -1,5 +1,16 @@
 <template>
     <main class="scrollbar">
+      <video 
+            width="80%" 
+            controls 
+            autoplay 
+            disablePictureInPicture 
+            controlsList="nodownload"
+            poster="../assets/img/watch_video.png" 
+            style="border-radius: 8px;">
+                <source src="../assets/vid/Üçgen_Izgara_Videosu.mp4"
+                    type="video/mp4">
+        </video>
       <!-- <div class="slider-wrapper">
         <div class="slider">
             <img id="slide-1" src="../assets/img/slider/N11-1.jpg" alt="Photo 1" />
