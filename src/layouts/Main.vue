@@ -6,7 +6,7 @@
       <div>
         <main>
           <slot></slot> <!-- Burada sayfa içeriği görünecek -->
-        </main>
+        </main>    
       </div>
     </div>
   </template>

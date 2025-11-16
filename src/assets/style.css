@@ -22,6 +22,9 @@
     --light-text-color: #fff;
 }
 
+
+
+
 .video-container {
     position: fixed;
     top: 0;
@@ -294,4 +297,32 @@ a[href] {
 
 .parent>* {
     border: 0px solid white;
+}
+
+
+
+
+main-x{
+  display: none;
+}
+
+/* Yalnızca yatay moda geçildiğinde içeriği gizle */
+@media only screen and (max-width: 1024px) {
+    main { grid-area: 2 / 1 / 2 / 6; }
+@media only screen and (orientation: landscape) {
+    .parent {
+        display: none !important; /* Yatayda içeriği gizle */
+    }
+
+    main-x {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    }
+}
 }

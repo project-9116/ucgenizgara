@@ -1,7 +1,7 @@
 <template>
     <main class="scrollbar">
       <video 
-            width="80%" 
+            width="100%" 
             controls 
             autoplay 
             disablePictureInPicture 
