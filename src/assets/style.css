@@ -82,8 +82,9 @@ body {
         radial-gradient(circle, #de375d, #d83459, #d33256, #cd2f52, #c82c4f, #c1284a, #b92445, #b22040, #a71a39, #9b1432, #900e2b, #850724);
     font-family: "Fustat", serif;
     font-weight: 400;
-    overflow: hidden;
+    overflow: auto;
     padding: 1.5% 2%;
+    min-height: 840px;
 }
 
 figure > figcaption{

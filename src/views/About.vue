@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="scrollbar">
     <article>
     <h1>Üçgen Izgaranın Mucidi</h1>
     <h3>Namık Kemal KARAMUK</h3>
